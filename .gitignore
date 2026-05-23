@@ -1,0 +1,33 @@
+# Backend build artifacts
+backend/bin/
+backend/obj/
+
+# Frontend build artifacts
+frontend/dist/
+frontend/node_modules/
+
+# Tests
+tests/node_modules/
+tests/test-results/
+tests/playwright-report/
+tests/playwright/.cache/
+
+# Frontend test artifacts
+frontend/test-results/
+frontend/playwright-report/
+frontend/playwright/.cache/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Env
+.env
+.env.local

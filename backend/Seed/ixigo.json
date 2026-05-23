@@ -1,0 +1,124 @@
+{
+  "tenantId": "ixigo",
+  "name": "ixigo",
+  "theme": {
+    "primaryColor": "#e84c3d",
+    "secondaryColor": "#f39c12",
+    "borderRadius": 4,
+    "fontFamily": "'Roboto', sans-serif",
+    "darkTheme": false
+  },
+  "navigation": [
+    { "id": "flight", "label": "✈ Flights", "enabled": true },
+    { "id": "hotel", "label": "🏨 Hotels", "enabled": true },
+    { "id": "holidays", "label": "🌴 Holidays", "enabled": false },
+    { "id": "deals", "label": "🏷 Offers", "enabled": true }
+  ],
+  "layout": ["navbar", "hero", "search", "popular", "footer"],
+  "blockConfigs": {
+    "navbar": { "variant": 2, "enabled": true },
+    "hero": { "variant": 2, "enabled": true },
+    "search": { "variant": 2, "enabled": true },
+    "popular": { "variant": 1, "enabled": true },
+    "footer": { "variant": 1, "enabled": true }
+  },
+  "featureFlags": { "showPromoApp": false, "enableSearchAnalytics": true },
+  "content": {
+    "hero": { "headline": "Compare & Save", "subHeadline": "Never overpay for your travel again.", "cta": "Find Trains/Flights" },
+    "resultsLabels": { "flight": "Flight Results", "hotel": "Hotel Results", "deals": "Package Results" },
+    "resultsFoundText": "found"
+  },
+  "navbar": { "ctaLabel": "Login", "loginTitle": "Login", "loginButtonText": "Login", "loginDemoText": "Demo mode — any input works", "emailPlaceholder": "Email or Phone", "passwordPlaceholder": "Password" },
+  "search": { 
+    "defaultFrom": "Mumbai (BOM)", 
+    "defaultTo": "Bangalore (BLR)", 
+    "tripTypes": ["One Way", "Round Trip"], 
+    "searchButtonText": "Search", 
+    "searchingText": "Finding...", 
+    "travelers": ["1 Traveller", "2 Travellers", "3 Travellers", "4 Travellers", "5+ Travellers"], 
+    "classes": ["Economy", "Premium Economy", "Business", "First Class"],
+    "fieldLabels": { "from": "From", "to": "To", "departure": "Departure", "returnDate": "Return", "travelers": "Travellers", "class": "Class" },
+    "mockData": {
+      "flights": [
+        { "id": "1", "code": "AI-101", "airline": "Air India", "dep": "06:00", "arr": "08:30", "duration": "2h 30m", "stops": "Non-stop", "price": "₹4,500", "tag": "cheapest" },
+        { "id": "2", "code": "6E-203", "airline": "IndiGo", "dep": "09:15", "arr": "11:45", "duration": "2h 30m", "stops": "Non-stop", "price": "₹5,200", "tag": "fast" },
+        { "id": "3", "code": "UK-811", "airline": "Vistara", "dep": "14:00", "arr": "16:45", "duration": "2h 45m", "stops": "Non-stop", "price": "₹6,800", "tag": "best" }
+      ],
+      "hotels": [
+        { "id": "1", "name": "Grand Hyatt", "stars": 5, "rating": "4.5", "location": "BKC, Mumbai", "price": "₹12,000/night", "tag": "Luxury" },
+        { "id": "2", "name": "Taj Palace", "stars": 5, "rating": "4.7", "location": "Colaba, Mumbai", "price": "₹15,000/night", "tag": "Top Rated" },
+        { "id": "3", "name": "Novotel", "stars": 4, "rating": "4.2", "location": "Juhu, Mumbai", "price": "₹6,500/night", "tag": "Value" }
+      ],
+      "packages": [
+        { "id": "1", "title": "Goa Beach Getaway", "nights": 3, "includes": "Flights + Hotel", "price": "₹18,500", "image": "" },
+        { "id": "2", "title": "Kerala Backwaters", "nights": 4, "includes": "Hotel + Meals", "price": "₹22,000", "image": "" },
+        { "id": "3", "title": "Rajasthan Heritage Tour", "nights": 5, "includes": "Flights + Hotel + Safari", "price": "₹35,000", "image": "" }
+      ]
+    }
+  },
+  "popular": {
+    "title": "Popular Routes",
+    "subtitle": "Best deals curated for you.",
+    "bookNowText": "Book Now",
+    "items": [
+      { "id": 1, "title": "Mumbai to Delhi", "sub": "From ₹3,200", "icon": "✈️", "type": "flight" },
+      { "id": 2, "title": "Bangalore to Chennai", "sub": "From ₹1,800", "icon": "✈️", "type": "flight" },
+      { "id": 3, "title": "Club Mahindra", "sub": "Holiday Packages", "icon": "🏨", "type": "hotel" },
+      { "id": 4, "title": "Kerala Backwaters", "sub": "3 Nights", "icon": "🌴", "type": "deals" }
+    ],
+    "dealDetails": {
+      "Mumbai to Delhi": { "description": "Multiple daily flights between Mumbai and Delhi with convenient timings.", "highlights": ["10+ daily flights", "2h duration", "Flexible rebooking", "Meal options"] },
+      "Bangalore to Chennai": { "description": "Quick hop between Bangalore and Chennai. Perfect for business or weekend trips.", "highlights": ["1h flight", "Hourly departures", "Budget options", "Train also available"] },
+      "Club Mahindra": { "description": "All-inclusive holiday packages at Club Mahindra resorts across India.", "highlights": ["All-inclusive", "Kids activities", "Multiple locations", "Member discounts"] },
+      "Kerala Backwaters": { "description": "Cruise through the serene backwaters of Kerala on a traditional houseboat.", "highlights": ["Houseboat stay", "Kerala cuisine", "Ayurveda spa", "Village tours"] }
+    }
+  },
+  "footer": {
+    "copyrightText": "White-Label Travel. All rights reserved.",
+    "policies": {
+      "Privacy Policy": "ixigo values your privacy. We collect only essential data to provide travel comparison services. Your data is never sold to third parties.",
+      "Terms of Service": "By using ixigo, you agree to our fare comparison terms. Prices shown are indicative and subject to change at the time of booking.",
+      "Cookie Policy": "We use cookies and similar technologies to track fare trends and personalize your experience. Manage preferences in your browser settings."
+    }
+  },
+  "editor": {
+    "editSiteText": "Edit Site",
+    "exitEditorText": "Exit Editor",
+    "saveButtonText": "Save & Publish",
+    "savingText": "Saving...",
+    "resetButtonText": "Reset to Defaults",
+    "resetConfirmText": "Reset this tenant to original defaults?",
+    "sectionLabels": { "navbar": "Navigation Bar", "hero": "Hero Promo", "search": "Search Widget", "popular": "Popular Deals", "footer": "Footer Area" },
+    "colorOverrides": ["#e040fb", "#00c896", "#6c7ae0", "#ffb300", "#f44336"],
+    "formLabels": {
+      "siteEditor": "Site Editor",
+      "buildingFor": "Building for",
+      "selectBlock": "Select Block to Customize",
+      "blockProperties": "Block Properties",
+      "clickBlockHint": "Click a block on the left to start customizing.",
+      "customize": "Customize",
+      "layoutVariant": "Layout Variant",
+      "colorOverride": "Color Override",
+      "clear": "Clear",
+      "visibility": "Visibility",
+      "enableBlock": "Enable this block",
+      "navigationTabs": "Navigation Tabs",
+      "ctaButton": "CTA Button",
+      "heroContent": "Hero Content",
+      "headline": "Headline",
+      "subHeadline": "Sub-headline",
+      "ctaButtonText": "CTA Button Text",
+      "searchConfig": "Search Config",
+      "defaultFrom": "Default From",
+      "defaultTo": "Default To",
+      "searchButtonText": "Search Button Text",
+      "searchingText": "Searching Text",
+      "footerContent": "Footer Content",
+      "brandName": "Brand Name",
+      "policyLinks": "Policy Links",
+      "popularDeals": "Popular Deals",
+      "sectionTitle": "Section Title",
+      "subtitle": "Subtitle"
+    }
+  }
+}

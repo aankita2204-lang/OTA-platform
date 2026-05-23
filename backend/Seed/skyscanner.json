@@ -1,0 +1,124 @@
+{
+  "tenantId": "skyscanner",
+  "name": "Skyscanner",
+  "theme": {
+    "primaryColor": "#0770e3",
+    "secondaryColor": "#00d69b",
+    "borderRadius": 24,
+    "fontFamily": "'Outfit', sans-serif",
+    "darkTheme": true
+  },
+  "navigation": [
+    { "id": "flight", "label": "✈ Search Everywhere", "enabled": true },
+    { "id": "hotel", "label": "🏨 Stays", "enabled": true },
+    { "id": "holidays", "label": "🌴 Car Hire", "enabled": false },
+    { "id": "deals", "label": "🏷 Rewards", "enabled": false }
+  ],
+  "layout": ["navbar", "hero", "search", "popular", "footer"],
+  "blockConfigs": {
+    "navbar": { "variant": 3, "enabled": true },
+    "hero": { "variant": 3, "enabled": true },
+    "search": { "variant": 1, "enabled": true },
+    "popular": { "variant": 2, "enabled": true },
+    "footer": { "variant": 1, "enabled": true }
+  },
+  "featureFlags": { "showPromoApp": true, "enableSearchAnalytics": false },
+  "content": {
+    "hero": { "headline": "The world is yours", "subHeadline": "Explore millions of flights and hotels.", "cta": "Explore All" },
+    "resultsLabels": { "flight": "Flight Results", "hotel": "Hotel Results", "deals": "Package Results" },
+    "resultsFoundText": "found"
+  },
+  "navbar": { "ctaLabel": "Sign in", "loginTitle": "Sign in", "loginButtonText": "Sign in", "loginDemoText": "Demo mode — any input works", "emailPlaceholder": "Email or Phone", "passwordPlaceholder": "Password" },
+  "search": { 
+    "defaultFrom": "London (LHR)", 
+    "defaultTo": "Paris (CDG)", 
+    "tripTypes": ["One Way", "Return"], 
+    "searchButtonText": "Find Flights", 
+    "searchingText": "Searching...", 
+    "travelers": ["1 Adult", "2 Adults", "3 Adults", "4 Adults", "5+ Adults"], 
+    "classes": ["Economy", "Premium Economy", "Business", "First"],
+    "fieldLabels": { "from": "From", "to": "To", "departure": "Departure", "returnDate": "Return", "travelers": "Travelers", "class": "Class" },
+    "mockData": {
+      "flights": [
+        { "id": "1", "code": "BA-117", "airline": "British Airways", "dep": "08:00", "arr": "10:30", "duration": "2h 30m", "stops": "Non-stop", "price": "$320", "tag": "cheapest" },
+        { "id": "2", "code": "AF-1083", "airline": "Air France", "dep": "11:15", "arr": "13:40", "duration": "2h 25m", "stops": "Non-stop", "price": "$410", "tag": "fast" },
+        { "id": "3", "code": "EZY-2541", "airline": "easyJet", "dep": "16:00", "arr": "18:35", "duration": "2h 35m", "stops": "Non-stop", "price": "$280", "tag": "best" }
+      ],
+      "hotels": [
+        { "id": "1", "name": "Hilton Paris", "stars": 5, "rating": "4.6", "location": "Champs-Élysées, Paris", "price": "$280/night", "tag": "Luxury" },
+        { "id": "2", "name": "Marriott Rive Gauche", "stars": 4, "rating": "4.3", "location": "Latin Quarter, Paris", "price": "$195/night", "tag": "Top Rated" },
+        { "id": "3", "name": "Ibis Styles", "stars": 3, "rating": "4.0", "location": "Gare du Nord, Paris", "price": "$95/night", "tag": "Value" }
+      ],
+      "packages": [
+        { "id": "1", "title": "Paris Romance Package", "nights": 4, "includes": "Flights + Hotel", "price": "$1,200", "image": "" },
+        { "id": "2", "title": "London-Paris Combo", "nights": 5, "includes": "Flights + Hotel + Rail", "price": "$1,580", "image": "" },
+        { "id": "3", "title": "European City Break", "nights": 3, "includes": "Hotel + Breakfast", "price": "$650", "image": "" }
+      ]
+    }
+  },
+  "popular": {
+    "title": "Trending destinations",
+    "subtitle": "Discover amazing places.",
+    "bookNowText": "Book Now",
+    "items": [
+      { "id": 1, "title": "New York to Tokyo", "sub": "From $450", "icon": "✈️", "type": "flight" },
+      { "id": 2, "title": "Dubai Stay", "sub": "Luxury Hotels", "icon": "🏨", "type": "hotel" },
+      { "id": 3, "title": "Bali Packages", "sub": "5 Nights", "icon": "🌴", "type": "deals" },
+      { "id": 4, "title": "Europe Tour", "sub": "10 Days", "icon": "🎯", "type": "deals" }
+    ],
+    "dealDetails": {
+      "New York to Tokyo": { "description": "Fly from NYC to Tokyo with multiple airlines. Experience the best of Japan.", "highlights": ["14h direct flight", "ANA & JAL available", "Japanese meals", "Entertainment"] },
+      "Dubai Stay": { "description": "Stay at the finest hotels in Dubai with views of Burj Khalifa and the Palm.", "highlights": ["5-star hotels", "Pool & beach", "City views", "Shopping nearby"] },
+      "Bali Packages": { "description": "All-inclusive Bali packages with flights, hotel, and activities.", "highlights": ["Flights included", "Beach villa", "Temple tours", "Surfing lessons"] },
+      "Europe Tour": { "description": "Multi-city Europe tour covering Paris, Rome, Barcelona, and Amsterdam.", "highlights": ["4 countries", "Guided tours", "4-star hotels", "Rail passes"] }
+    }
+  },
+  "footer": {
+    "copyrightText": "White-Label Travel. All rights reserved.",
+    "policies": {
+      "Privacy Policy": "Skyscanner is committed to protecting your privacy. We only collect data necessary to provide our comparison service and never share it without your explicit consent.",
+      "Terms of Service": "By using Skyscanner, you agree to our travel comparison terms. We are a search engine and do not sell tickets directly. All bookings are with the provider.",
+      "Cookie Policy": "We use cookies to remember your preferences, track price changes, and improve your experience. You can disable non-essential cookies in your browser settings."
+    }
+  },
+  "editor": {
+    "editSiteText": "Edit Site",
+    "exitEditorText": "Exit Editor",
+    "saveButtonText": "Save & Publish",
+    "savingText": "Saving...",
+    "resetButtonText": "Reset to Defaults",
+    "resetConfirmText": "Reset this tenant to original defaults?",
+    "sectionLabels": { "navbar": "Navigation Bar", "hero": "Hero Promo", "search": "Search Widget", "popular": "Popular Deals", "footer": "Footer Area" },
+    "colorOverrides": ["#e040fb", "#00c896", "#6c7ae0", "#ffb300", "#f44336"],
+    "formLabels": {
+      "siteEditor": "Site Editor",
+      "buildingFor": "Building for",
+      "selectBlock": "Select Block to Customize",
+      "blockProperties": "Block Properties",
+      "clickBlockHint": "Click a block on the left to start customizing.",
+      "customize": "Customize",
+      "layoutVariant": "Layout Variant",
+      "colorOverride": "Color Override",
+      "clear": "Clear",
+      "visibility": "Visibility",
+      "enableBlock": "Enable this block",
+      "navigationTabs": "Navigation Tabs",
+      "ctaButton": "CTA Button",
+      "heroContent": "Hero Content",
+      "headline": "Headline",
+      "subHeadline": "Sub-headline",
+      "ctaButtonText": "CTA Button Text",
+      "searchConfig": "Search Config",
+      "defaultFrom": "Default From",
+      "defaultTo": "Default To",
+      "searchButtonText": "Search Button Text",
+      "searchingText": "Searching Text",
+      "footerContent": "Footer Content",
+      "brandName": "Brand Name",
+      "policyLinks": "Policy Links",
+      "popularDeals": "Popular Deals",
+      "sectionTitle": "Section Title",
+      "subtitle": "Subtitle"
+    }
+  }
+}
